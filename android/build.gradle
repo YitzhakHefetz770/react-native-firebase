@@ -155,7 +155,7 @@ dependencies {
   compileOnly('com.google.firebase:firebase-ads:15.0.1') {
     // exclude `customtabs` as the support lib version is out of date
     // we manually add it as a dependency below with a custom version
-    exclude group: 'com.androidx', module: 'customtabs'
+    exclude group: 'com.android.support', module: 'customtabs'
   }
   // Authentication
   compileOnly "com.google.firebase:firebase-auth:16.2.1"
@@ -188,7 +188,7 @@ dependencies {
    * -------------------------------- */
 
   // For Firebase Ads
-  compileOnly "com.androidx:customtabs:$supportVersion"
+  compileOnly "com.android.support:customtabs:$supportVersion"
 
   // For React Native Firebase Notifications
   api "androidx.legacy:legacy-support-v4:1.0.0"
